@@ -10,6 +10,8 @@ A very bare-bones python class to interface to a [Power-Mate PM10AHDS Power Moni
 * Status - Request the current status registers, which includes accumulated energy, and instantaneous voltage, power, current and powerfactor.
 * Erase - Resets all registers. The meter will start collecting data again after the erase occurs.
 
+PowerMate units have an address with a default value of 0x01. I don't currently support modifying this address.
+
 ## Pre-Requisites
 This class just requires the pyserial library, which can be installed from a package manager (e.g. `apt-get install python3-serial`), or in a virtualenv using pip:
 
